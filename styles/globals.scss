@@ -83,3 +83,23 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+.arrival {
+  background: linear-gradient(
+    to right bottom,
+    #fff 50%,
+    #ffbfbf 50%
+  ) !important;
+}
+
+.occupied {
+  background-color: #ffbfbf !important;
+}
+
+.departure {
+  background: linear-gradient(
+    to right bottom,
+    #ffbfbf 50%,
+    #fff 50%
+  ) !important;
+}
