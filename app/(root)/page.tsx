@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { ContactForm } from '@/components/composite/contactForm';
 import BookingCalendar from '@/components/composite/bookingCalendar';
+import AspectRatio from '@/components/lib/aspectRatio';
 
 export default function Home() {
   return (
@@ -23,6 +24,12 @@ export default function Home() {
       <Button>Hello</Button>
       <BookingCalendar />
       <ContactForm />
+
+      <AspectRatio className='m-40 w-full' ratio='1:1'>
+        <p className='flex h-full w-full items-center justify-center bg-red-300'>
+          AspectRatio
+        </p>
+      </AspectRatio>
       <div className='z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex'>
         <p className='fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30'>
           Get started by editing&nbsp;
